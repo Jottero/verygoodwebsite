@@ -1,5 +1,5 @@
 
-[Hafta 4](2)
+[Hafta 4](2.html)
 
 ## Welcome to GitHub Pages
 
