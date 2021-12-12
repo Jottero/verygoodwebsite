@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="topla()">topla</button>
+    1.sayı:<input type="text" id="s1">
+    2.sayı:<input type="text" id="s2">
+    <span id="sonuc"></span>
+
+    <script>
+       
+        function topla(){
+        s1= Number(document.getElementById('s1').value);
+        s2= Number(document.getElementById('s1').value);
+        sonuc =s1+s2;
+        document.getElementById('sonuc').innerHTML=sonuc;
+        }
+        
+    </script>
+</body>
+</html>
