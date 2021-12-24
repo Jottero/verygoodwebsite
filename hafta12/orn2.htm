@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addToRow(){
+            var table2 = document.getElementById("table2");
+            var numara= document.getElementById("num").value;
+            var adsoyad = document.getElementById("ad").value;
+            var bolum = document.getElementById("bolum").value;
+            var telefon = document.getElementById("tel").value;
+            table2.innerHTML+="<tr>"+"<td>"+numara+"</td>"+"<td>"+adsoyad+"</td>"+"<td>"+bolum+"</td>"+"<td>"+telefon+"</td>"+"</tr>";
+        }
+    </script>
+
+    <table>
+        <tr><th>Numara</th> <td><input type="text" id="num"></td></tr>
+        <tr><th>Adı soyadı:</th><td><input type="text" id="ad"></td></tr>
+        <tr><th>Bölüm:</th><td><input type="text" id="bolum"></td></tr>
+        <tr><th>Telefon:</th><td><input type="text" id="tel"></td></tr>
+        <tr><td><input type="button" value="Kaydet" onclick="addToRow()"></td></tr>
+    </table>
+
+    <table id="table2" border="1px">
+        <tr><th>Numara</th><th>Adı Soyadı</th><th>Bölümü</th><th>Telefon</th></tr>
+    </table>
+
+</body>
+</html>
