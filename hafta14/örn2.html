@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Renkler : <select id="Renkler" size="1" onchange="renkdegistir()">
+            <option value="black">Siyah</option>
+            <option value="red">Kırmızı</option>
+            <option value ="blue">Mavi</option>
+            <option value="green">Yeşil</option>
+            <option value="yellow">Sarı</option>
+    </select>
+
+    <h2 id="p1">BİLGİSAYAR PROGRAMCILIĞI</h2>
+
+    <script>
+        function renkdegistir(){
+            renk = document.getElementById("Renkler").value
+            document.getElementById("p1").style.color=renk
+        }
+    </script>
+</body>
+</html>
