@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="BAŞLA" onclick="Basladur()">
+
+
+    <img id="ftb" src="https://egitimgrafik.com/wp-content/uploads/2019/02/futop.png"  height="100px" width="100px" style="position: absolute;">
+        
+    <script>
+        var x=0;
+        var y=0;
+        var yonX=1;
+        var yonY=1;
+        function zamanlayici(){
+        
+        }
+
+        function Basladur(){
+            var adim =2;
+            x=x+yonX*adim;
+            y=y+yonY*adim;
+            if(x>900) yonX=-1;
+            if(x<0) yonX=1;
+            if(y>500) yonY=-1;
+            if(y<0) yonY=1;
+            var top=document.getElementById("ftb");
+            top.style.top = x+"px";
+            top.style.left = y+"px";
+
+            setTimeout(Basladur, 10)
+        }
+    </script>
+</body>
+</html>

@@ -5,3 +5,4 @@ Internet Programlama haftalar ve örnekleri:
 [Hafta 6](Hafta6)
 [hafta11](hafta11)
 [hafta12](hafta12)
+[hafta14](hafta14)
